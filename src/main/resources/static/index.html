@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websocket - Bitcoin/USD Price</title>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'></script>
+    <script type='text/javascript'>
+	    WebFont.load({
+	        google: {
+	            families: [
+	                    'Ubuntu:300,500,700',
+	                    'Merriweather:300i'
+	            ]
+	        }
+	    });
+    </script>
+    <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body>
+    <div class="connecting">
+        Connecting...
+    </div>
+
+    <div id="container">
+        <div id="btcusd" class="hidden">
+            <p id="price_value" class="price">waiting for market trades..</p>
+            <span id="arrow" class="price-arrow">−</span>
+        </div>
+    </div>
+	<!-- Cliente pusher, provee canales de comunicacion en tiempo real entre servidores y clientes -->
+    <script src="https://d3dy5gmtp8yhk7.cloudfront.net/2.1/pusher.min.js"></script>
+
+	<!-- Cliente SockJS, intenta usar de forma nativa websockets, y si no se puede establecer la conexion se proveen metodos alternativos como comet o long-polling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+
+	<!-- cliente stomp para manejar el intercambio de mensajes entre los clientes y el servidor websocket -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

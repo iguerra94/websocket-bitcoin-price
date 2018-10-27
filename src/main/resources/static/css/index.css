@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.wf-ubuntu-n3-active body,
+.wf-ubuntu-n5-active body,
+.wf-ubuntu-n7-active body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.connecting {
+    padding-top: 5px;
+    text-align: center;
+    color: #777;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    min-height: calc(50vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5em;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.up {
+    background-color: green;
+    color: white;
+}
+
+.down {
+    background-color: red;
+    color: white;
+}
+
+.equal {
+    background-color: #ccc;
+    color: black;
+}
+
+.price-arrow {
+    font-size: 3em;
+}
+
+.price-up {
+    color: green;
+}
+
+.price-down {
+    color: red;
+}
+
+.price-equal {
+    color: black;
+}
